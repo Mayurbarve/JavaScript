@@ -1,2 +1,2 @@
-# This is my local repo
-HTML CSS repositories
+JavaScript-codes
+
