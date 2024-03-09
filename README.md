@@ -1,3 +1,3 @@
-<h1>JavaScript-codes</h1><br>
+<h1>JavaScript</h1><br>
 This is JavaScript Repository.
 Aurthor- Mayur
