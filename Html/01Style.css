@@ -1,0 +1,13 @@
+h1{
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.hello{
+    border: 5px solid black;
+    background-color: aqua;
+}
+
+#hello{
+    border: 10px solid seagreen;
+}
