@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        #container {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #6ac1c6;
+            border-radius: 10px;
+            background-color: #8fe6eb;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)"></div>
+    <button onclick="chnageColor()">Click</button>
+    <button onmousedown="downChnageColor()">Click</button>
+
+    <script>
+        function chnageColor() {
+            const click = document.getElementById('container');
+            const randomRgbColor = () => {
+                let r = Math.floor(Math.random() * 256); // Random between 0-255
+                let g = Math.floor(Math.random() * 256); // Random between 0-255
+                let b = Math.floor(Math.random() * 256); // Random between 0-255
+                return 'rgb(' + r + ',' + g + ',' + b + ')';
+            };
+            click.style.backgroundColor = randomRgbColor();
+        }
+        // MouseOver
+        function onMouseOver(div){
+            const randomRgbColor = () => {
+                let r = Math.floor(Math.random() * 256); // Random between 0-255
+                let g = Math.floor(Math.random() * 256); // Random between 0-255
+                let b = Math.floor(Math.random() * 256); // Random between 0-255
+                return 'rgb(' + r + ',' + g + ',' + b + ')';
+                console.log(r);
+            };
+            div.style.backgroundColor = randomRgbColor();
+        }
+        //MouseOut
+        function onMouseOut(div){
+            const randomRgbColor = () => {
+                let r = Math.floor(Math.random() * 256); // Random between 0-255
+                let g = Math.floor(Math.random() * 256); // Random between 0-255
+                let b = Math.floor(Math.random() * 256); // Random between 0-255
+                return 'rgb(' + r + ',' + g + ',' + b + ')';
+                console.log(r);
+            };
+            div.style.backgroundColor = randomRgbColor();
+        }
+
+        //on Mouse Down // on Mouse up
+        function downChnageColor() {
+            const click = document.getElementById('container');
+            const randomRgbColor = () => {
+                let r = Math.floor(Math.random() * 256); // Random between 0-255
+                let g = Math.floor(Math.random() * 256); // Random between 0-255
+                let b = Math.floor(Math.random() * 256); // Random between 0-255
+                return 'rgb(' + r + ',' + g + ',' + b + ')';
+                console.log(r);
+            };
+            click.style.backgroundColor = randomRgbColor();
+        }
+    </script>
+</body>
+
+</html>
